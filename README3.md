@@ -39,6 +39,7 @@ This contrast allows microwave signals to "see" the tumour inside the breast.
 ### System Architecture
 
 A transmitting antenna sends a **Gaussian UWB pulse** into the breast. Multiple receiving antennas capture the scattered signals. Signal processing then isolates the tumour response and reconstructs its location.
+<img width="688" height="546" alt="image" src="https://github.com/user-attachments/assets/cc8eeb78-14bc-4289-a044-6481e6b22edf" />
 
 <!-- 📸 SCREENSHOT 1: Take from PAGE 7 of your PDF — the line drawing showing Breast, Transmitter, and Receivers -->
 ![Figure 1 - Breast model with transmitter and receivers](fig1_breast_transmitter_receivers.png)
@@ -57,6 +58,7 @@ The simulation was built in **CST Microwave Studio**, a professional electromagn
   - Antenna 1 → Transmitter
   - Antennas 2, 3, 4 → Receivers
 - Tumour: **spherical, 2 mm radius**, placed at coordinates **(−10, 10, 10)**
+<img width="688" height="546" alt="image" src="https://github.com/user-attachments/assets/59acc9c6-e395-41e7-9938-f33f767fa8d1" />
 
 <!-- 📸 SCREENSHOT 2: Take from PAGE 10 of your PDF — the 3D rendered CST model showing Ant 1, Ant 2, Ant 3, Ant 4 around the hemisphere -->
 ![Figure 2 - 3D CST breast model with 4 antennas](fig2_cst_breast_model.png)
@@ -78,6 +80,7 @@ The simulation was run in two stages:
 
 **Tumour Signal Extraction**
 - Subtract Stage 1 from Stage 2 → isolates the **tumour scattering signature**
+<img width="688" height="606" alt="image" src="https://github.com/user-attachments/assets/496f3fa2-8d9e-497b-a62d-3c74b47edf06" />
 
 <!-- 📸 SCREENSHOT 3: Take from PAGE 13 of your PDF — the 3D model showing the red tumour sphere inside the breast with all 4 antennas visible -->
 ![Figure 3 - Simulation breast model with tumour](fig3_simulation_with_tumour.png)
@@ -101,14 +104,21 @@ Antenna 3 shows a later peak because it is positioned farther from the tumour �
 
 **Antenna 1 → Antenna 2:**
 
-<!-- 📸 SCREENSHOT 4: Take from PAGE 14 of your PDF — the line graph titled "Simulation signal result", y-axis goes up to 6×10⁻³, showing two lines (signal with and without tumour) -->
-![Figure 4 - Signal result at Antenna 2](fig4_signal_antenna2.png)
-*Figure 4: Received signal at Antenna 2 — with and without tumour*
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/eba85fa4-2748-446e-bade-d0851b1a78cb" />
+
+
+
+
+
 
 **Antenna 1 → Antenna 3:**
 
-<!-- 📸 SCREENSHOT 5: Take from PAGE 15 of your PDF — same style graph but y-axis goes up to 3×10⁻³ (Antenna 3 is farther from the tumour so signal is weaker) -->
-![Figure 5 - Signal result at Antenna 3](fig5_signal_antenna3.png)
+
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/06925579-6e0d-496b-a486-205c4765f66d" />
+
+
 *Figure 5: Received signal at Antenna 3 — with and without tumour*
 
 ---
